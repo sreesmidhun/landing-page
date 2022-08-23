@@ -1,0 +1,970 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> 
+    <!-- Link Swiper's CSS -->
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>  
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+	
+	
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	 
+<title>Untitled Document</title>
+	<style>
+		body
+		{
+			background-image:url("images/digital-hi-tech.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			color: white;
+		}
+		/* navbar style */
+	 .navbar{
+
+background-color:black;
+z-index: 999;
+
+}
+
+.navbar  a{
+
+ color: white;
+
+ 
+}
+.navbar  a:hover{
+
+ color:darkred;
+
+}
+
+.nav-item  a{
+
+color: white;
+
+}  
+
+.nav-item  a:hover{
+
+color:#F5AC0E;
+
+}  
+
+a{
+  text-decoration: none;
+  color:black;
+  list-style: none;
+}
+nav ul li a{
+padding: 1rem 0;
+margin: 0 3rem;
+position: relative;
+letter-spacing: 2px;
+
+}
+		  
+nav ul li a:last-child{
+  margin-right: 0;
+} 
+
+
+
+nav ul li a::before,
+nav ul li a::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color:#F99C02;
+  left: 0;
+  transform: scaleX(0);
+  transition: all 1s;
+}
+nav ul li a::before{
+  top: 0;
+  transform-origin:left;
+}
+nav ul li a::after{
+  bottom: 0;
+  transform-origin:right;
+}
+
+nav ul li a:hover::after{
+  transform: scaleX(1);
+}
+		
+		
+		/* about style  */
+		
+.about
+		{
+			color:white;
+			text-align: center;
+			font-weight: bold;
+			text-decoration: underline;
+			
+		
+		}
+.aboutp
+		{
+			text-align:justify;
+			line-height: 33px;
+			font-weight: 600px;
+		}
+.abouth
+		{
+			text-align: center;
+			font-weight: bold;
+		}
+.abpic
+		{
+			margin-left: 150px;
+		}
+	
+	/* facilities */	
+		
+		
+.card{
+
+border: none;
+
+transition: 1s;
+border-radius:none;
+background-color: transparent;
+}
+.card img{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.card:hover {
+
+transform: scale(0.8);
+z-index: 1;
+}
+.card-text{
+    color: white;
+	font-weight: bold;
+}
+.card-text:hover{
+
+    text-decoration: underline;
+	text-decoration-color: black;
+}
+
+
+
+.card1{
+
+border: none;
+
+transition: 1s;
+border-radius:none;
+
+}
+.card1 img{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.card1:hover {
+
+transform: scale(0.9);
+opacity: 0.2;
+z-index: 1;
+background-color: #151414;
+}
+
+		  h1
+{
+	text-align:center;
+}
+.btn
+{
+	color: #F00;
+}
+
+		
+		
+		/* contact  */
+		
+		
+form
+		{
+			background-image:url("images/istockphoto-187497393-170667a.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			display: flex;
+			flex-direction: column;
+			padding: 2vw 4vw;
+			width: 90%;
+			max-width: 600px;
+			border-radius: 10px;
+			margin-left: 300px;
+		}
+		
+
+		
+form input, form select
+		{
+			border: 0;
+			margin: 10px 0;
+			padding: 20px;
+			outline: none;
+			background-color:#AFFBF9;
+			font-size: 16px;
+		}
+
+form button
+		{
+			padding: 15px;
+			background: #3FB048;
+			color: white;
+			font-size: 18px;
+			border: 0;
+			outline: none;
+			cursor: pointer;
+			width: 150px;
+			margin: 20px auto 0;
+			border-radius: 30px;
+		}
+
+
+		
+			  
+		  /*footer*/
+
+
+.footer-section {
+  background: #151414;
+  position: relative;
+}
+.footer-cta {
+  border-bottom: 1px solid #373636;
+}
+.single-cta i {
+  color:coral;
+  font-size: 30px;
+  float: left;
+  margin-top: 8px;
+}
+.cta-text {
+  padding-left: 15px;
+  display: inline-block;
+}
+.cta-text h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.cta-text span {
+  color: #757575;
+  font-size: 15px;
+}
+.footer-content {
+  position: relative;
+  z-index: 2;
+}
+.footer-pattern img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 330px;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+.footer-logo {
+  margin-bottom: 30px;
+}
+.footer-logo img {
+    max-width: 200px;
+}
+.footer-text p {
+  margin-bottom: 14px;
+  font-size: 14px;
+      color: #7e7e7e;
+  line-height: 28px;
+}
+.footer-social-icon span {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+.footer-social-icon a {
+  color: #fff;
+  font-size: 16px;
+  margin-right: 15px;
+}
+.footer-social-icon i {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+}
+
+.footer-widget-heading h3 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+	margin-left: 50px;
+}
+.footer-widget-heading h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 2px;
+  width: 160px;
+  background:coral;
+}
+.footer-widget ul li {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  margin-bottom: 12px;
+}
+.footer-widget ul li a:hover{
+  color:coral;
+}
+.footer-widget ul li a {
+  color: #878787;
+  text-transform: capitalize;
+}
+.subscribe-form {
+  position: relative;
+  overflow: hidden;
+}
+.subscribe-form input {
+  width: 100%;
+  padding: 14px 28px;
+  background: #2E2E2E;
+  border: 1px solid #2E2E2E;
+  color: #fff;
+  border-radius:50px;
+}
+.subscribe-form button {
+    position: absolute;
+    right: 0;
+    background:coral;
+    padding: 13px 20px;
+    border: 1px solid #296968;
+    top: 0;
+    border-radius:100px;
+}
+.subscribe-form button i {
+  color: #fff;
+  font-size: 22px;
+  transform: rotate(-6deg);
+}
+.copyright-area{
+  background: #202020;
+  padding: 25px 0;
+}
+.copyright-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #878787;
+}
+.copyright-text p a{
+  color:#296968;
+}
+.footer-menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+.footer-menu li:hover a{
+  color:coral;
+}
+.footer-menu li a {
+  font-size: 14px;
+  color: #878787;
+}
+
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 50%;
+  border: none;
+  width: 80px;
+  height: 80px;
+  font-size: 40px;
+  color: white;
+  background:coral;
+}
+
+
+
+		  
+	
+	
+	</style>
+</head>
+
+<body>
+	
+  
+    <div class="container-fluid">
+
+<!---navbar-->
+
+<nav class="navbar navbar-expand-lg fixed-top ">
+  <div class="container-fluid fixed">
+    <a class="navbar-brand" href="#"> <img src="images/logo-arena.png" alt="" style="width:100px; height:auto"><br><p style="color: white; font-size: 15px; margin-left: 10px;">KOTTAYAM</p>   </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        
+       
+       
+		   <li class="nav-item">
+          <a class="nav-link " href="#about">ABOUT US</a>
+        </li>
+		   <li class="nav-item">
+          <a class="nav-link " href="#facilities">FACILITIES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="#courses">COURSE</a>
+        </li>
+		  <li class="nav-item">
+          <a class="nav-link " href="#enquiry">ENQUIRY</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="#contact">CONTACT US</a>
+        </li>
+        
+		</ul>
+    </div>
+  </div>
+</nav>
+	  	<br><br><br><br><br>
+<!-- about secssion -->
+		
+	 <div id="about">
+	<div class="container">
+<div class="row">
+	
+<div class="col-sm-12">
+	<h1 class="about">ABOUT US</h1>
+	<br><br>
+	<h3 class="abouth">ARENA ANIMATION – CELEBRATING 25 <br>YEARS OF EXCELLENCE</h3>
+	<br><br>
+	<p class="aboutp">This year marks the completion of 25 years of Arena Animation as a leader in vocational training. It is a significant milestone not just in view of the outstanding accomplishments along the way, but also considering the lives touched in the past two and a half decades.</p><br>
+		
+		</div>
+		</div>
+			 </div>
+		</div>
+		
+	 
+	  
+	  <div class="col-sm-12">
+    <img src="images/celebrating-.jpg" style="width: 80%;" class="abpic">
+		  
+</div>
+	  
+	<br>
+	<br>
+		
+	<div class="container">
+<div class="row">
+	
+<div class="col-sm-12">
+
+<p>As the nation enters the 75th year of its independence, it is heartening to note that Arena Animation has spent a third of this time in shaping careers of the youth with our career-oriented and skill-building courses. Therefore, contributing immensely in nation-building. Even as India is moving in the direction of “Atmanirbharta”, Arena Animation has steadfastly contributed in this direction by enabling our partners to build and scale their businesses revolving around the strength of Arena Animation. Further, our job-oriented courses have helped scores of youth to secure financial independence. As we continue to march ahead, we intend to strengthen our commitment to our six-edge advantage viz. Creativity, Resilience, Teamwork, Working under deadlines, Presentation Skills, and Industry Interface.<br><br>
+
+Aptech Limited, a pioneer in the non-formal vocational training business in the country for over 3 decades, established its media & entertainment brand - Arena Animation in the year 1996. Arena Animation today stands tall as a pioneer, trendsetter and a global leader in the animation and non-formal academic curriculum based training programs.<br><br>
+
+With strong industry connects and affiliations, Arena Animation has been designing academic courses that are relevant, imparting skillsets that make students highly employable. Arena students are placed as Graphic Designers, Web Designers, 2D/3D Animators, 2D/3D Designers, AV Editors, Technical Trainers, 3D Modelers, Multimedia Programmers, Compositors, Visualizers, Content Developers and Pre and Post Production Executives in blue chip animation studios and entertainment companies.</p><br>
+	
+	</div>
+		</div>
+			 </div>
+	</div>
+		
+	  <!----video---->
+	
+<div class="container-fluid">
+<div class="row">
+<div class="col-sm-12">
+      
+<video src="images/VID-20220506-WA0001.mp4" autoplay muted loop width="100%">
+	</video>
+</div>
+</div>
+</div> 
+	
+	
+	
+	<!-----our facilitys------->
+	
+	
+	  <div id="facilities">
+<div class="bg1">
+<br><br>
+   <div class="container">
+	   <h1 style="color:white;text-align: center;font-weight: bold; text-decoration: underline;">OUR FACILITIES</h1>
+	</div>
+	   <br><br><br>
+<div class="container">
+    <div class="row">
+ <div class="col-sm-6 col-xm-6">
+            <div class="card" style="width:100%;">
+          <h1 style="text-align: center;">ONLINEVARSITY</h1>
+                <img src="images/Image_03.png" alt="Avatar" class="image" style="width:100%">
+				 <div class="card-body">
+                  <p class="card-text">Onlinevarsity is the ecommerce arm of Aptech, a global learning solutions company present in 40 countries. Onlinevarsity features eCourses & delivers special experiences, especially curated for students and working professionals.</p>
+                </div>
+          </div>
+        </div>
+        
+        <div class="col-sm-6 col-xm-6">
+            <div class="card" style="width:100%;">
+				<h1 style="text-align: center;">JOB PLACEMENT</h1>
+                <img src="images/Image_02.png" height="360px;">
+				 <div class="card-body">
+                  <p class="card-text">To make you a job ready creative professional, Arena Animation helps you with the industry-relevant skills, hone your talent with technique, give you industry exposure through formal and informal events, showcase your skills in various platforms, ensure your job-readiness with Employability Enhancement Program, and help you with interview preparations.</p>
+                </div>
+          </div>
+        </div>
+        
+      </div>
+<br>
+      <div class="row">
+        <div class="col-sm-6 col-xm-6">
+                   <div class="card" style="width:100%;">
+                 <h1 style="text-align: center;">PRACTICAL TRAINING</h1>
+                       <img src="images/Image_05.png" alt="Avatar" class="image" style="width:100%;">
+					    <div class="card-body">
+                  <p class="card-text">We provide practical training, all our programes are designed using project based training approach so that you get actual coading knowledge while you learn,since we are developers,we know that programing can only be learned practicaly.</p>
+                </div>
+                 </div>
+               </div>
+               
+               <div class="col-sm-6 col-xm-6">
+                   <div class="card" style="width:100%;">
+					   <h1 style="text-align: center;">CREOSOULS</h1>
+                       <img src="images/Image_06.png" alt="Avatar" class="image" style="width:100%">
+					    <div class="card-body">
+                  <p class="card-text"> Arena Animation guides you in building and showcasing a portfolio that will make recruiters want to hire you.Creosouls is a one stop online portfolio management & social networking platform for Arena Animation students. In Creosouls, you can upload your creative portfolio, share with the world, enhance your industry network, and get hired</p>
+                </div>
+                 </div>
+               </div>
+               
+             </div>
+       <br>
+             <div class="row">
+        <div class="col-sm-6 col-xm-6">
+                   <div class="card" style="width:100%;">
+                 <h1 style="text-align: center;">FRIENDLY ATMOSPHERE </h1>
+                       <img src="images/Image_01.png" alt="Avatar" class="image" style="width:100%;">
+					    <div class="card-body">
+                  <p class="card-text">Classroom atmosphere is a vital component of teaching and learning that helps establish and maintain rapport between teacher and students, build motivation and confidence among the learners, and facilitate the processes of teaching and learning.</p>
+                </div>
+                 </div>
+               </div>
+               
+               <div class="col-sm-6 col-xm-6">
+                   <div class="card" style="width:100%;">
+					   <h1 style="text-align: center;">JOB-ORIENTED COURSES</h1>
+                       <img src="images/Image_04.png" alt="Avatar" class="image" style="width:100%">
+					    <div class="card-body">
+                  <p class="card-text"> The increased interest in entertaining content for animated films, VFX-heavy movies, games, TV shows, online videos, websites, and more have led to a perpetually expanding media & entertainment industry. The industry in turn demands a huge number of trained and certified professionals to create the content. Thousands of job opportunities are currently available in the media & entertainment industry while thousands more are being created at an extra ordinary pace.</p>
+                </div>
+                 </div>
+               </div>
+	</div>
+             </div> 
+   </div>
+    
+</div>
+
+	
+	<!-- courses -->
+	
+	
+	
+	
+	
+	  <div id="courses">
+<div class="bg1">
+<br><br>
+   <div class="container">
+	   <h1 style="color:white;text-align: center;font-weight: bold; text-decoration: underline;">OUR COURSES</h1><br><br>
+	   
+	   <p>Arena Animation, a pioneer in the global media and entertainment training industry offers power-packed courses that help you shape your creative career.<br> At Arena, we train you on industry-relevant employment-oriented skills through the most advanced tools and technologies with the help of expert faculty. <br>Chase your dream career in animation, vfx, gaming, and more. Join media and entertainment courses after your 12th.</p>
+	</div>
+	   <br><br><br>
+<div class="container">
+    <div class="row">
+ <div class="col-sm-6 col-xm-6">
+            <div class="card" style="width:100%;">
+          <h1 style="text-align: center;">VFX PRIME</h1>
+                <img src="images/gYwV8P.webp" alt="Avatar" class="image" style="width:100%" height="350px;">
+				 <div class="card-body">
+                  <p class="card-text">Where reality meets and blends with the imagination, Visual Effects (VFX) begins. Arena’s VFX courses trains you to become all-round VFX specialists. Right from the fundamentals to the most advanced techniques and tools, you will learn all that the industry demands from a skilled professional.With the production of movies like The Avengers and Bahubali, and television shows like Game of Thrones that is set in fantasy worlds, the demand for visual effects is on the rise. Learn fundamentals of visual effects with these VFX courses and transform the ordinary into extraordinary!</p>
+                </div>
+          </div>
+        </div>
+        
+        <div class="col-sm-6 col-xm-6">
+            <div class="card" style="width:100%;">
+				<h1 style="text-align: center;">ANIMATION PRIME</h1>
+                <img src="images/3d-animation.jpg" height="350px;">
+				 <div class="card-body">
+                  <p class="card-text">The analog inspired controls of the X100 Series are one of its most defining characteristics. The use of dials for exposure compensation and shutter speed provide a purely tactile experience and contribute considerably to making the image making process an immersive and enjoyable experience.</p>
+                </div>
+          </div>
+        </div>
+        
+      </div>
+<br>
+      <div class="row">
+        <div class="col-sm-6 col-xm-6">
+                   <div class="card" style="width:100%;">
+                 <h1 style="text-align: center;">FILM MAKING</h1>
+                       <img src="images/DigitalFilmMaking.jpg" alt="Avatar" class="image" style="width:100%; height: 350px;">
+					    <div class="card-body">
+                  <p class="card-text">We provide practical training, all our programes are designed using project based training approach so that you get actual coading knowledge while you learn,since we are developers,we know that programing can only be learned practicaly.</p>
+                </div>
+                 </div>
+               </div>
+               
+               <div class="col-sm-6 col-xm-6">
+                   <div class="card" style="width:100%;">
+					   <h2 style="text-align: center;">VFX COMPOSITING & EDITING</h2>
+                       <img src="images/tom_hardy_eddie_brock_hd_venom-1600x900.jpg" alt="Avatar" class="image" style="width:100%" height="350px;">
+					    <div class="card-body">
+                  <p class="card-text"> Arena Animation guides you in building and showcasing a portfolio that will make recruiters want to hire you.Creosouls is a one stop online portfolio management & social networking platform for Arena Animation students. In Creosouls, you can upload your creative portfolio, share with the world, enhance your industry network, and get hired</p>
+                </div>
+                 </div>
+               </div>
+               
+             </div>
+       <br>
+             <div class="row">
+        <div class="col-sm-6 col-xm-6">
+                   <div class="card" style="width:100%;">
+                 <h1 style="text-align: center;">WEB & GRAPHICS</h1>
+                       <img src="images/360_F_446216052_8IZ9BXC0IMhJsp1xP3qQuEOQM99CSVrX.jpg" alt="Avatar" class="image" style="width:100%;" height="350px;">
+					    <div class="card-body">
+                  <p class="card-text">Arena Animation offers job-oriented courses to help you build successful careers in the booming digital space. Join our graphics and web design courses to discover more about web design and graphic design! With the rapid expansion of the Internet, the demand for skilled web designers is on the upswing and this number is only set to rise in the coming years.
+
+As a web designer or developer you will work on a range of projects, be creative, and learn new things, helping you to stay fun and satisfied in your career. You get the opportunity to face new challenges and apply your skills to solve them. Get trained in all aspects of graphics, web design and development at Arena Animation.</p>
+                </div>
+                 </div>
+               </div>
+               
+               <div class="col-sm-6 col-xm-6">
+                   <div class="card" style="width:100%;">
+					   <h1 style="text-align: center;">GRAPHIC DESIGN</h1>
+                       <img src="images/course-img-16.jpg" alt="Avatar" class="image" style="width:100%" height="350px;">
+					    <div class="card-body">
+                  <p class="card-text"> The two-way tilting LCD touchscreen hides in the back of the camera and adds another first for the X100 series as it provides intuitive touch controls, unlocking even more possibilities for image-makers to see, frame, and create.</p>
+                </div>
+                 </div>
+               </div>
+	</div>
+             </div> 
+   </div>
+    
+</div>
+	<br><br>
+	
+	
+<!--contact-->
+
+	
+
+	<div id="enquiry">
+	<div class="container">
+	<div style="text-align: center">
+		<h2 style="font-weight: bold;">To Know More</h2>
+		</div>
+		<div class="row">
+		
+			<div class="column">
+			<form id="submit-form" action="">
+				<label for="fname">First Name</label>
+				<input type="text" id="fname" name="name" placeholder="Your name..">
+				<label for="lname">Email</label>
+				<input type="text" id="lname" name="email" placeholder="Your email..">
+				<label for="country">Course</label>
+				<select id="country" name="color">
+				<option value="vfxprime">VFX PRIME</option>
+				<option value="vfx">VFX COMPOSITING & EDITING</option>
+					<option value="vfxprime">ANIMATION PRIME</option>
+					<option value="vfxprime">WEB & GRAPHIC</option>
+					<option value="vfxprime">GRAPHIC DESIGN</option>
+					<option value="vfxprime">DEGREE</option>
+				</select>
+				<label for="subject">Phone</label>
+				<input type="text" id="subject" name="phone" placeholder="Your phone.."><br>
+				<input type="submit" value="SUBMIT">
+				
+				
+				</form>
+			</div>
+		</div>
+	</div>
+	</div><br><br>
+	
+	
+	
+	
+	<!-- Footer -->
+	<div id="contact">
+	<footer class="footer-section">
+  <div class="container">
+    <div class="footer-cta pt-5 pb-5">
+      <div class="row">
+        <div class="col-xl-4 col-md-4 mb-30">
+          <div class="single-cta">
+			  <img src="images/map-logo-png.png" alt="locate" style="width: 50px; margin-top:-30px;">
+            <div class="cta-text">
+			
+              <h4>Find Us</h4>
+              <span>ARENA ANIMATION KOTTAYAM</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-md-4 mb-30">
+          <div class="single-cta">
+              <img src="images/call-logo-png.png" alt="call" style="width: 50px; margin-top:-30px;">
+            <div class="cta-text">
+				<a href="callto:9544462444">
+              <h4>Call Us</h4>
+              <span>+91 9544462444</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-md-4 mb-30">
+          <div class="single-cta">
+              <img src="images/gmail-logo-png.png" alt="mail" style="width: 50px; margin-top:-30px;">
+            <div class="cta-text">
+				<a href="mailto:arenakottayam@gmail.com">
+              <h4>Mail Us</h4>
+					<span>arenakottayam@gmail.com</span></a>
+            </div>
+          </div>
+        </div>
+		<br><br><br>
+		 <div class="col-xl-4 col-md-4 mb-30">
+          <div class="single-cta">
+              <img src="images/facebook-logo-3-1.png" alt="call" style="width: 50px; margin-top:-30px;">
+            <div class="cta-text">
+				<a href="https://www.facebook.com/arenaanimationkottayam">
+			
+              <h4>Facebook</h4>
+              <span>ARENA Animation Kottayam</span></a>
+            </div>
+          </div>
+        </div>
+		
+		 <div class="col-xl-4 col-md-4 mb-30">
+          <div class="single-cta">
+              <img src='images/Instagram-Icon.png' alt="call" style="width: 50px; margin-top:-30px;">
+            <div class="cta-text">
+				<a href="https://www.instagram.com/arenaanimation2018/">
+			
+              <h4>Instagram</h4>
+              <span>arenaanimation2018</span></a>
+            </div>
+          </div>
+        </div>
+		
+		<div class="col-xl-4 col-md-4 mb-30">
+          <div class="single-cta">
+			  
+              <img src="images/youtubelogo_png.png" alt="call" style="width: 50px; margin-top:-30px;">
+			 
+            <div class="cta-text">
+				<a href="https://www.youtube.com/channel/UCF_Vpd_CPrWZKQrNGMXVC_A">
+				
+              <h4>Youtube</h4>
+              <span>Arena animation</span></a>
+          </div>
+        </div>
+		
+		
+        </div>
+      </div>
+
+	
+		
+    <div class="footer-content pt-5 pb-5">
+      <div class="row">
+        <div class="col-xl-4 col-lg-4 mb-50">
+          <div class="footer-widget">
+            <div class="footer-logo">
+              <a href="#"><img src="images/logo-arena.png" class="img-fluid" alt="logo"></a>
+            </div>
+           
+            <div class="footer-social-icon">
+              <span>Follow us</span>
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-twitter"></i></a>
+              <a href="#"><i class="bi bi-google"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+          <div class="footer-widget">
+            <div class="footer-widget-heading">
+              <h3>Useful Links</h3>
+            </div>
+            <ul>
+              <li><a href="#home">HOME</a></li>
+              <li><a href="#about">ABOUT UU</a></li>
+              <li><a href="#courese">COURSES</a></li>
+              <li><a href="3enquiry">ENQUIRY</a></li>
+			  <li><a href="#facilities">FACILITIES</a></li>
+              <li><a href="#contact">CONTACT US</a></li>
+             
+            </ul>
+          </div>
+        </div>
+		  
+		  <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+          <div class="footer-widget">
+            <div class="footer-widget-heading">
+              <h3>Students Use Only</h3>
+            </div>
+            <ul>
+              <li><a href="https://www.creosouls.com/">CREOSOULS</a></li>
+              <li><a href="https://www.onlinevarsity.com/">ONLINEVARSITY</a></li>
+              
+             
+            </ul>
+          </div>
+        </div>
+       
+       
+    </div>
+  </div>
+	   
+  <div class="copyright-area">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+          <div class="copyright-text">
+            <p>Copyright &copy; 2018, All Right Reserved <a href="#">ARENA</a></p>
+          </div>
+        </div>
+        <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+          <div class="footer-menu">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Terms</a></li>
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">Policy</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+	 
+	</div>
+</footer>
+	  
+
+	  
+	  
+	
+	
+	<!-- enquiry form ajas -->
+	
+	<script>
+        $("#submit-form").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycbygCprB2ISUGifEgFOoNMqIseQ2K6QSzbRvrNMm/exec",
+                data:$("#submit-form").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Form submitted successfully")
+                    window.location.reload()
+                    //window.location.href="https://google.com"
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
+        })
+    </script>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	   
+	
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+<!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+</html>
